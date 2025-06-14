@@ -1,0 +1,26 @@
+[project]
+name = "mlflow-playground"
+version = "0.1.0"
+description = "This is a mlflow-playground for following getting started instructions."
+authors = [
+    { name = "stephanie choi", email = "116370283+stephaniec2020@users.noreply.github.com" }
+]
+dependencies = [
+    "mlflow>=3.1.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mlflow_playground"]
