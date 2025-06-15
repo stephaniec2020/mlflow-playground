@@ -8,3 +8,7 @@ wheels/
 
 # venv
 .venv
+
+# ml experiments generated files
+mlruns/
+mlartifacts/
